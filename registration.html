@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1> Registration Form </h1>
+<hr>
+<style>
+
+.Submit{
+background-color: green;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 27%;
+    opacity: 0.6;
+}
+
+.Submit:hover {
+  opacity: 1;
+}
+
+.Reset{
+background-color: green;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 27%;
+    opacity: 0.6;
+}
+
+.Reset:hover {
+  opacity: 1;
+}
+body {
+background-color: white;
+}
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+</style>
+
+</head>
+<body>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" placeholder="Your FirstName"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" placeholder="Your LastName"><br>
+  <label for="email">Enter your email:</label><br>
+  <input type="email" id="email" name="email" placeholder="Your Email"><br>
+  <label for="password">Password:</label><br>
+   <input type="password" id="pwd" name="pwd" placeholder="Your Password"><br>
+  
+  <label for="College_Name">College Name</label><br>
+
+<select name="cllg_name" id="cllg_name">
+  <option value="1"></option>
+   <option value="2">GCET</option>
+  <option value="3">SNIST</option>
+  <option value="4">CBIT</option>
+  <option value="5">VBIT</option>
+</select><br>
+
+<p>Select your Branch</p>
+  <input type="radio" id="b1" name="branch" value="">
+  <label for="b1">Computer Science</label><br>
+  <input type="radio" id="b2" name="branch" value="">
+  <label for="b3">EEE</label><br>  
+  <input type="radio" id="b3" name="branch" value="">
+  <label for="b4">Mechanical</label><br><br>
+
+<p>Language Known</p>
+  <input type="checkbox" id="lang1" name="lang1">
+<label for="lang1">Java</label><br>
+ <input type="checkbox" id="lang2" name="lang2">
+<label for="lang2">C</label><br>
+ <input type="checkbox" id="lang3" name="lang3">
+<label for="lang3">C++</label><br>
+ <input type="checkbox" id="lang4" name="lang4">
+<label for="lang4">Python</label><br>
+<input type="checkbox" id="lang5" name="lang5">
+<label for="lang5">Perl</label><br>
+<input type="checkbox" id="lang6" name="lang6">
+<label for="lang6">JavaScript</label><br>
+ <input type="checkbox" id="lang7" name="lang7">
+<label for="lang7">Bash</label><br><br>
+
+  
+  <input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
